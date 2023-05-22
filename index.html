@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketing Website</title>
+
+    <!-- Bootstap CSS CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+     <!-- Bootstap JS and Propper CDN Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <!-- import CSS file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+
+    <!-- Animate CSS Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="85">
+
+       <!-- Navbar section -->
+      
+       <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg fixed-top bg-dark">
+          <div class="container-fluid">
+          <!-- <a class="navbar navbar-brand fs-3 ms-3">GrowTech</a> -->
+            <a class="navbar-brand fs-3 ms-3" href="#">Grow <span class="text-info"> Tech </span></a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <!-- <i class="bx bx-menu"></i> -->
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav menu-navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#clients">Clients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faqs">FAQs</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item text-center">
+                  
+                  <button class="btn btn-outline-success" onclick="openForm()"><strong>GET IN TOUCH</strong></button>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="btn btn-outline-warning" href="#freetrial">Free Trial</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+       </header>
+      
+       <!-- Banner section -->
+       <section id="home" class="banner_wrapper">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 header-img-section">
+              <img src="images/banner-images/mk-img.jpg" class="img-fluid" alt="Banner">
+            </div>
+            <div class="col-md-6 my-5 my-md-0 text-center text-md-start">
+              <p class="banner-subtitle">Digital Marketing</p>
+              <h1 class="banner-title">Make <span>connection</span> with your online customers</h1>
+              <p class="banner-title-text">Digital marketing, also called online marketing, is the promotion of brands to connect with potential customers using the internet and other forms of digital communication. This includes not only email, social media, and web-based advertising, but also text and multimedia messages as a marketing channel.</p>
+              <div class="btn-section">
+                <a class="btn btn-dark btn-header" href="#about">Try Free Trial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+
+      <!-- About section -->
+      <section id="about" class="about_wrapper">
+        <div class="container my-4">
+          <h1 class="text-center fw-bold display-1"><span class="text-light">Digital</span><span class="text-danger"> Marketing</span></h1>
+          <div class="row mb-2">
+            <div class="col-md-4 my-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="images/about-images/affiliate-marketing.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="..."></img>
+                <div class="card-body">
+                  <h3>Affiliate Marketing</h3>
+                  <p class="card-text">
+                    Affiliate marketing is the process by which an affiliate earns a commission for marketing another person's or company's products. 
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-primary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="images/about-images/Content_Marketing.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="..."></img>
+                <div class="card-body">
+                  <h3>Content Marketing</h3>
+                  <p class="card-text">
+                    Content marketing is a form of marketing focused on creating, publishing, and distributing content for a targeted audience online.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-primary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="images/about-images/email-marketing.png" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="..."></img>
+                <div class="card-body">
+                  <h3>Email Marketing</h3>
+                  <p class="card-text">
+                    Email and marketing automation eliminates time-wastage, is cost-efficient, and increases collaboration between sales and marketing. 
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-primary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="images/about-images/SEO-marketing.png" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="..."></img>
+                <div class="card-body">
+                  <h3>SEO Marketing</h3>
+                  <p class="card-text">
+                    Search engine optimization (SEO) is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic (known as "natural" or "organic" results) rather than direct traffic or paid traffic
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-primary">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="images/about-images/social-media-marketing.png" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="..."></img>
+                <div class="card-body">
+                  <h3>
+                    Social Media Marketing</h3>
+                  <p class="card-text">
+                    Social media marketing is the use of social media platforms and websites to promote a product or service. Although the terms e-marketing and digital marketing are still dominant in academia, social media marketing is becoming more popular for both practitioners and researchers.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-primary">View</button>
+                     
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-4">
+              <div class="card mb-4 shadow-sm">
+                <img src="images/about-images/web-advertising-marketing.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="..."></img>
+                <div class="card-body">
+                  <h3>Web Advertising Marketing</h3>
+                  <p class="card-text">
+                    Online advertising, also known as online marketing, Internet advertising, digital advertising or web advertising, is a form of marketing and advertising which uses the Internet to promote products and services to audiences and platform users.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-primary">View</button>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features section -->
+      <section id="features" class="features_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center mb-5">
+              <p class="features-subtitle">so much to offer</p>
+              <h2 class="features-title">Our Features</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-5">
+              <div class="ft-1">
+                <h3>Consultancy</h3>
+                <p class="features-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas consequuntur natus maiores sint at dignissimos quam voluptate quo doloremque.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+              <div class="ft-2">
+                <h3>User Dashboard</h3>
+                <p class="features-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas consequuntur natus maiores sint at dignissimos quam voluptate quo doloremque.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+              <div class="ft-3">
+                <h3>Tech Solution</h3>
+                <p class="features-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas consequuntur natus maiores sint at dignissimos quam voluptate quo doloremque.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+              <div class="ft-4">
+                <h3>Notification</h3>
+                <p class="features-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas consequuntur natus maiores sint at dignissimos quam voluptate quo doloremque.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+              <div class="ft-5">
+                <h3>Data Retrieval</h3>
+                <p class="features-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas consequuntur natus maiores sint at dignissimos quam voluptate quo doloremque.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+              <div class="ft-6">
+                <h3>Flexible System</h3>
+                <p class="features-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas consequuntur natus maiores sint at dignissimos quam voluptate quo doloremque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
+      </section>
+
+      <!-- pricing section -->
+      <section id="pricing" class="pricing_wrapper">
+        <div class="container py-3">
+          <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+              <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                <span class="fs-4">Pricing</span>
+              </a>
+              <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Features</a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Enterprise</a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Support</a>
+                <a class="py-2 link-body-emphasis text-decoration-none" href="#">Pricing</a>
+              </nav>
+            </div>
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+              <h2 class="display-4 fw-normal own-text">SUBSCRIPTION</h2>
+              <p class="fs-5 text-body-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit magni amet iste iusto, nostrum mollitia ex sunt adipisci perspiciatis repellat?</p>
+            </div>
+          </header>
+          <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Free</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>10 users included</li>
+                      <li>2 GB of storage</li>
+                      <li>Email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Pro</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>20 users included</li>
+                      <li>10 GB of storage</li>
+                      <li>Priority email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                  <div class="card-header py-3 text-bg-primary border-primary">
+                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                  </div>
+                  <div class="card-body">
+                    <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                      <li>30 users included</li>
+                      <li>15 GB of storage</li>
+                      <li>Phone and email support</li>
+                      <li>Help center access</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <h4 class="display-6 text-center mb-4 own-text">COMPARE PLANS</h4>
+        
+            <div class="table-responsive">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th style="width: 34%;"></th>
+                    <th style="width: 22%;">Free</th>
+                    <th style="width: 22%;">Pro</th>
+                    <th style="width: 22%;">Enterprise</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Public</th>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Private</th>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                </tbody>
+        
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Permissions</th>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Sharing</th>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Unlimited members</th>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Extra security</th>
+                    <td></td>
+                    <td></td>
+                    <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </main>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section id="reviews" class="reviews_wrapper">
+        <div class="container">
+          <h4 class="text-center fw-bold display-1"><span class="text-dark">Customers</span><span class="text-danger"> Reviews</span></h4>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+           
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/reviews-images/reviews-img-1.jpg" class="bd-placeholder-img card-img-top" width="100%" height="250" alt="..."></img>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a accusantium aperiam voluptatibus ratione similique ipsum adipisci sequi vero repudiandae.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/reviews-images/reviews-img-5.jpg" class="bd-placeholder-img card-img-top" width="100%" height="250" alt="..."></img>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a accusantium aperiam voluptatibus ratione similique ipsum adipisci sequi vero repudiandae.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/reviews-images/reviews-img-4.jpg" class="bd-placeholder-img card-img-top" width="100%" height="250" alt="..."></img>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a accusantium aperiam voluptatibus ratione similique ipsum adipisci sequi vero repudiandae.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/reviews-images/reviews-img-3.jpg" class="bd-placeholder-img card-img-top" width="100%" height="250" alt="..."></img>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a accusantium aperiam voluptatibus ratione similique ipsum adipisci sequi vero repudiandae.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/reviews-images/reviews-img-2.jpg" class="bd-placeholder-img card-img-top" width="100%" height="250" alt="..."></img>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a accusantium aperiam voluptatibus ratione similique ipsum adipisci sequi vero repudiandae.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/reviews-images/reviews-img-6.jpg" class="bd-placeholder-img card-img-top" width="100%" height="250" alt="..."></img>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a accusantium aperiam voluptatibus ratione similique ipsum adipisci sequi vero repudiandae.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/reviews-images/reviews-img-7.jpg" class="bd-placeholder-img card-img-top" width="100%" height="250" alt="..."></img>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a accusantium aperiam voluptatibus ratione similique ipsum adipisci sequi vero repudiandae.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/reviews-images/reviews-img-4.jpg" class="bd-placeholder-img card-img-top" width="100%" height="250" alt="..."></img>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a accusantium aperiam voluptatibus ratione similique ipsum adipisci sequi vero repudiandae.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="images/reviews-images/reviews-img-1.jpg" class="bd-placeholder-img card-img-top" width="100%" height="250" alt="..."></img>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a accusantium aperiam voluptatibus ratione similique ipsum adipisci sequi vero repudiandae.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+
+        </div>
+        
+
+      </section>
+
+         <!-- Client section -->
+         <section id="clients" class="client_wrapper">
+          <div class="container">
+            <h1 class="text-center fw-bold display-1"><span class="text-light">Our</span><span class="text-danger"> Clients</span></h1>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <img src="images/company-image/amazon-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/apple-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/coca-cola-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/facebook-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/google-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/ibm-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <img src="images/company-image/mcdonalds-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/microsoft-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/nike-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/samsung-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/toyota-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-lg-2">
+                      <img src="images/company-image/visa-logo.png" class="d-block w-100" alt="...">
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+  
+         </section>
+
+         <!-- FAQS -->
+         <section id="faqs" class="faqs_wrapper">
+          <div class="container my-4">
+            <div class="row">
+              <div class="col-12 text-center mb-5">
+                <p> We are here to help</p>
+                <h2>Frequently asked questions</h2>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-sm-12 col-lg-8 mb-5 mb-lg-0">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                       1. How does the free trial work?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sunt sequi ducimus nam, minus tempore. Minima, ad. Modi expedita, distinctio ab harum blanditiis porro! Aliquid deserunt amet ducimus quam laboriosam.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                       2. How do I make payments?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae deserunt repudiandae quam harum delectus numquam ad alias voluptate vel. Minus sint atque explicabo, delectus quas tempora. Quis obcaecati ad aliquam.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        3. Can I upgrade my plan any time?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, consequatur. Ab aut vitae consectetur sint, quam accusantium, unde, laboriosam eos impedit a reprehenderit nemo? Nobis illum maxime qui tempora possimus.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        4. How do I get touch with support?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, consequatur. Ab aut vitae consectetur sint, quam accusantium, unde, laboriosam eos impedit a reprehenderit nemo? Nobis illum maxime qui tempora possimus.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-4">
+                <img src="images/faqs-images/faqs-img.png" class="img-fluid">
+              </div>
+            </div>
+          </div>
+         </section>
+        
+         <!-- footer -->
+         <section class="footer_wrapper">
+          <div class="container mb-0">
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+              <div class="row">
+                <div class="col-6 col-md">
+                  <h4 class="text-light">Grow <span class="text-info"> Tech </span></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus? Id, vero libero earum aperiam cum atque, possimus delectus, rem amet accusantium numquam provident.</p>
+                </div>
+                <div class="col-6 col-md">
+                  <h4>Contact</h4>
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">infoservices@growtech.com</a></li>
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">23/321 West</a></li>
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">City, 23487, UK, COUNTRY</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h4>Resources</h4>
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">Resource</a></li>
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">Resource name</a></li>
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">Another resource</a></li>
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">Final resource</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h4>About</h4>
+                  <ul class="list-unstyled text-small">
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">Team</a></li>
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">Locations</a></li>
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">Privacy</a></li>
+                    <li class="mb-1"><a class="link text-decoration-none" href="#">Terms</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </div>
+         </section>
+      
+
+<style>
+  .formPopup {
+    display: none;
+    position: fixed;
+     width: 900px;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #242323;
+    z-index: 9;
+    margin: 50px;
+    background-color: rgb(51, 129, 62);
+  }
+ 
+</style>
+
+  <div class="formPopup" id="popupForm">
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <h3 class="text-center  bg-info">GET IN TOUCH</h3>
+        <div class="mx-4">
+        <label for="exampleInputPassword1" class="form-label my-2">Your Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mx-4">
+        <label for="exampleInputEmail1" class="form-label my-2">Email ID</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+      </div>
+      <div class="mx-4">
+        <label for="exampleInputPassword1" class="form-label my-2">Phone.no</label>
+        <input type="number" class="form-control" id="phone" required>
+      </div>
+      <div class="mb-4 mx-4">
+        <label for="exampleInputPassword1" class="form-label my-2">How can we help you?</label>
+        <input type="text" class="form-control" id="message" required>
+      </div>
+    
+      <button type="submit" class=" mx-4 mb-4 btn btn-primary">Submit</button>
+      <button type="button" class=" mb-4 btn btn-danger btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+<script>
+  function openForm() {
+    document.getElementById("popupForm").style.display = "block";
+  }
+  function closeForm() {
+    document.getElementById("popupForm").style.display = "none";
+  }
+</script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+   <script>
+  function sendEmail(){
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "xyz@gmail.com",
+    Password : "password",
+    To : 'abc@gmail.com',
+    From : document.getElementById('email').value,
+    Subject : "New Contact From Enquiry",
+    Body : "Name:" + document.getElementById("name").value
+    + " <br> Email:" + document.getElementById("email").value
+    + " <br> Phone:" + document.getElementById("phone").value
+    + " <br> Message:" + document.getElementById("message").value
+   }).then(
+  message => alert("Message Sent Successfuly")
+   );
+ }
+</script>
+
+
+    <!-- import main.js file -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
