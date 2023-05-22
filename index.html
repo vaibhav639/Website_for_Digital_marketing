@@ -508,7 +508,7 @@
 
       </section>
 
-         <!-- Client section -->
+      <!-- Client section -->
          <section id="clients" class="client_wrapper">
           <div class="container">
             <h1 class="text-center fw-bold display-1"><span class="text-light">Our</span><span class="text-danger"> Clients</span></h1>
@@ -573,7 +573,7 @@
   
          </section>
 
-         <!-- FAQS -->
+      <!-- FAQS -->
          <section id="faqs" class="faqs_wrapper">
           <div class="container my-4">
             <div class="row">
@@ -634,7 +634,7 @@
           </div>
          </section>
         
-         <!-- footer -->
+      <!-- footer -->
          <section class="footer_wrapper">
           <div class="container mb-0">
             <footer class="pt-4 my-md-5 pt-md-5 border-top">
@@ -674,79 +674,79 @@
           </div>
          </section>
       
+      <!-- form section -->
+      <style>
+        .formPopup {
+          display: none;
+          position: fixed;
+           width: 900px;
+          left: 50%;
+          top: 10%;
+          transform: translate(-50%, 5%);
+          border: 3px solid #242323;
+          z-index: 9;
+          margin: 50px;
+          background-color: rgb(51, 129, 62);
+        }
+      </style>
 
-<style>
-  .formPopup {
-    display: none;
-    position: fixed;
-     width: 900px;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, 5%);
-    border: 3px solid #242323;
-    z-index: 9;
-    margin: 50px;
-    background-color: rgb(51, 129, 62);
-  }
- 
-</style>
+      <div class="formPopup" id="popupForm">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3 class="text-center  bg-info">GET IN TOUCH</h3>
+            <div class="mx-4">
+            <label for="exampleInputPassword1" class="form-label my-2">Your Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mx-4">
+            <label for="exampleInputEmail1" class="form-label my-2">Email ID</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+          </div>
+          <div class="mx-4">
+            <label for="exampleInputPassword1" class="form-label my-2">Phone.no</label>
+            <input type="number" class="form-control" id="phone" required>
+          </div>
+          <div class="mb-4 mx-4">
+            <label for="exampleInputPassword1" class="form-label my-2">How can we help you?</label>
+            <input type="text" class="form-control" id="message" required>
+          </div>
+          <button type="submit" class=" mx-4 mb-4 btn btn-primary">Submit</button>
+          <button type="button" class=" mb-4 btn btn-danger btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
 
-  <div class="formPopup" id="popupForm">
-    <form onsubmit="sendEmail(); reset(); return false;">
-      <h3 class="text-center  bg-info">GET IN TOUCH</h3>
-        <div class="mx-4">
-        <label for="exampleInputPassword1" class="form-label my-2">Your Name</label>
-        <input type="text" class="form-control" id="name" required>
-      </div>
-      <div class="mx-4">
-        <label for="exampleInputEmail1" class="form-label my-2">Email ID</label>
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
-      </div>
-      <div class="mx-4">
-        <label for="exampleInputPassword1" class="form-label my-2">Phone.no</label>
-        <input type="number" class="form-control" id="phone" required>
-      </div>
-      <div class="mb-4 mx-4">
-        <label for="exampleInputPassword1" class="form-label my-2">How can we help you?</label>
-        <input type="text" class="form-control" id="message" required>
-      </div>
+      
+      <!-- JavaScript Function -->
+
+      <script>
+        function openForm() {
+          document.getElementById("popupForm").style.display = "block";
+        }
+        function closeForm() {
+          document.getElementById("popupForm").style.display = "none";
+        }
+      </script>
+
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+      <script>
+        function sendEmail(){
+          Email.send({
+          Host : "smtp.gmail.com",
+          Username : "xyz@gmail.com",
+          Password : "password",
+          To : 'abc@gmail.com',
+          From : document.getElementById('email').value,
+          Subject : "New Contact From Enquiry",
+          Body : "Name:" + document.getElementById("name").value
+          + " <br> Email:" + document.getElementById("email").value
+          + " <br> Phone:" + document.getElementById("phone").value
+          + " <br> Message:" + document.getElementById("message").value
+         }).then(
+        message => alert("Message Sent Successfuly")
+         );
+       }
+      </script>
     
-      <button type="submit" class=" mx-4 mb-4 btn btn-primary">Submit</button>
-      <button type="button" class=" mb-4 btn btn-danger btn cancel" onclick="closeForm()">Close</button>
-    </form>
-  </div>
-
-<script>
-  function openForm() {
-    document.getElementById("popupForm").style.display = "block";
-  }
-  function closeForm() {
-    document.getElementById("popupForm").style.display = "none";
-  }
-</script>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-
-   <script>
-  function sendEmail(){
-    Email.send({
-    Host : "smtp.gmail.com",
-    Username : "xyz@gmail.com",
-    Password : "password",
-    To : 'abc@gmail.com',
-    From : document.getElementById('email').value,
-    Subject : "New Contact From Enquiry",
-    Body : "Name:" + document.getElementById("name").value
-    + " <br> Email:" + document.getElementById("email").value
-    + " <br> Phone:" + document.getElementById("phone").value
-    + " <br> Message:" + document.getElementById("message").value
-   }).then(
-  message => alert("Message Sent Successfuly")
-   );
- }
-</script>
-
-
     <!-- import main.js file -->
     <script src="js/main.js"></script>
 
